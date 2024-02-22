@@ -1,4 +1,0 @@
-Realizar 5 paginas web, utilizando las etiquetas aprendidas en clases sobre ustedes
-yo.html , mifamilia.html, misamigos.html, mi ciudad.html y mis hobbies.html,
-subirlo a su repositorio en git hub  en la carpeta Tareas / Tarea1 
-luego subir la dirección de su tarea al classroom
