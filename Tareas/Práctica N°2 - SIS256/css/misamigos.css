@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(219, 216, 216);
+}
+
+h1 {
+    color: rgb(73, 29, 29);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    border: 1px solid black;
+    line-break: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, ts {
+    border: 1px solid black;
+    padding: 8px;
+}
