@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(219, 216, 216);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(248, 19, 19);
+}
+
+.family-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.family-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.family-member {
+    background-color: #6c6969;
+    color: #fff;
+    padding: 5px 10px; 
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: inline-block; 
+    border-radius: 20px;
+}
+
+#padre {
+    color: rgb(2, 60, 79);
+    font-size: 24px;
+}
+
+#madre {
+    color: rgb(54, 27, 111);
+    font-size: 24px;
+}
+
+#hermanos {
+    color: rgb(26, 6, 53);
+    font-size: 24px;
+}
+
+.additional-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.additional-info h2 {
+    color: rgb(248, 19, 19);
+}
+
+.additional-info .pet {
+    margin-top: 20px;
+}
+
+.additional-info img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.additional-info p {
+    color: #666;
+    font-size: 18px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

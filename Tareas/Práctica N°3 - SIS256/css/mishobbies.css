@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(219, 216, 216);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+.hobbies-list {
+    margin-top: 20px;
+}
+
+.hobbies-list p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+img.chess {
+    display: block;
+    margin: 0 auto;
+    max-width: 24%;
+    height: auto;
+}
+
+audio, video {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 24%;
+}
+
+.note {
+    margin-top: 20px;
+}
+
+.note p {
+    text-align: center;
+}
+
+.c {
+    font-weight: bold;
+    color: blue;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

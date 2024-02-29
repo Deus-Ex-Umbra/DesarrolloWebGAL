@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(219, 216, 216);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(3, 52, 19);
+    font-size: 36px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deus_ex_umbra {
+    height: 300px;
+    width: 300px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrera {
+    color: rgb(10, 2, 39);
+    font-style: italic;
+}
+
+.micarrera {
+    font-size: large;
+}
+
+section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #777;
+}

@@ -1,0 +1,53 @@
+.contenedor {
+    margin: 0 auto;
+    width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+}
+
+.universidad0 {
+    text-align: center; /* Centra el texto "Universidad..." */
+}
+
+.Facultad {
+    margin-top: 10px;
+}
+
+.carrera {
+    clear: both;
+}
+
+.corto {
+    text-align: left;
+}
+
+.largo {
+    width: 700px;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.universitario p {
+    margin: 5px 0;
+}
+
