@@ -15,12 +15,12 @@ td {
 }
 
 .fila-verde {
-    background-color: darkgreen;
+    background-color: rgb(83, 163, 83);
     color: white;
 }
 
 .fila-celeste {
-    background-color: lightblue;
+    background-color: rgb(68, 183, 221);
 }
 
 .contenido {
@@ -87,7 +87,7 @@ td {
 }
 
 .corto {
-    text-align: left;
+    width: 100px;
 }
 
 .largo {
