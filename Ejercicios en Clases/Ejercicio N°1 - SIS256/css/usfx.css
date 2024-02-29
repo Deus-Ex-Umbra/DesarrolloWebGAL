@@ -1,6 +1,6 @@
 .contenedor {
     margin: 0 auto;
-    width: 800px;
+    width: 900px;
 }
 
 table {
@@ -14,21 +14,76 @@ td {
     text-align: center;
 }
 
-.logo img {
-    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
-    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+.fila-verde {
+    background-color: darkgreen;
+    color: white;
 }
 
-.universidad0 {
-    text-align: center; /* Centra el texto "Universidad..." */
+.fila-celeste {
+    background-color: lightblue;
 }
 
-.Facultad {
-    margin-top: 10px;
+.contenido {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-universidad {
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo-universidad img {
+    width: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+.texto-universidad {
+    overflow: hidden;
+    text-align: left;
+}
+
+.texto-universidad p {
+    margin: 0;
+}
+
+.texto-universidad p.grande {
+    font-size: 24px;
+}
+
+.texto-universidad p.mediano {
+    font-size: 20px;
+}
+
+.texto-universidad p.chico {
+    font-size: 16px;
+}
+
+.texto-universidad p.rojo {
+    color: red;
+}
+
+.texto-universidad p.azul {
+    color: blue;
+}
+
+.texto-universidad p.derecha {
+    text-align: right;
+}
+
+.facultad-sucre {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .carrera {
-    clear: both;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .corto {
@@ -51,3 +106,14 @@ td {
     margin: 5px 0;
 }
 
+.rojo {
+    color: red;
+}
+
+.amarillo {
+    color: yellow;
+}
+
+.verde {
+    color: green;
+}
