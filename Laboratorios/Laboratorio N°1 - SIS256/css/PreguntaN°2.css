@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.verde {
+    background-color: #053d12;
+}
+
+.rosa {
+    background-color: #ff00ff;
+}
+
+.naranja {
+    background-color: #ff6600;
+}
+
+.barradatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.barraciudad p,
+.barrarrss img {
+    margin-right: 15px;
+}
+
+.barraciudad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barrarrss {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barrapagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(12, 88, 36);
+    padding: 10px;
+}
+
+.botonclasificados,
+.radio .texto {
+    margin: 0 20px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.eldeber .logo {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.barratiponoticia ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+.barratiponoticia li {
+    padding: 5px 10px;
+}
+
+
+.espacioempresarial {
+
+}
+
+
+.noticias {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.noticiaprincipal,
+.noticiasecundaria {
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.noticiaprincipal h1,
+.noticiasecundaria h2 {
+    margin: 10px 0;
+}
+
+.noticiaprincipal img {
+    width: 870px;
+}
+
+.noticiaprincipal .texto {
+    position: absolute;
+    width: 800px;
+    color: white;
+    top: 700px;
+    left: 50px;
+    text-align: center;
+}
+
+.noticiasecundaria img {
+    width: 600px;
+    padding-left: 200px;
+}
+
+.noticiasecundaria .texto {
+    padding-left: 200px;
+}
+
+.etiqueta1 {
+    position: absolute;
+    top: 280px;
+    left: 900px;
+    color: white;
+    background-color: #053d12;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.etiqueta2 {
+    position: absolute;
+    top: 275px;
+    left: 1450px;
+    color: white;
+    background-color: #053d12;
+    padding: 5px;
+}

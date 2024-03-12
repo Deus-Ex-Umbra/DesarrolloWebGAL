@@ -1,0 +1,147 @@
+.contenedor {
+    border: 1px solid #000;
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #366F91;
+}
+
+.facultad {
+    border: 1px solid #000;
+    margin: 0;
+    width: 900px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.universidad {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.usfx {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.tecnología {
+    color: #4C9BD3;
+}
+
+.ciudad {
+    font-family: Arial, sans-serif;
+    color: transparent;
+    background: linear-gradient(to right, red 30%, yellow 30%, yellow 80%, green 70%, green 100%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+.lugar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carrera {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alumn div {
+    margin-right: 20px;
+}
+
+.alumn span.universitario {
+    background-color:#4C9BD3;
+}
+
+
+.logouniversidad img, .logofacultad img {
+    width: 50px;
+    height: 50px;
+}
+
+.logouniversidad {
+    margin-left: -40px;
+}
+
+.datosautenticacion {
+    border: 1px solid #000;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.datosautenticacion .datos p {
+    margin: 0;
+}
+
+.datos {
+    width: 770px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.ing {
+    color: #4C9BD3;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    background-color: #366F91;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.menu > div {
+    border: 1px solid #000; 
+    padding: 5px;
+    text-align: center; 
+}
+
+.rojo {
+    background-color: #FF0000; 
+}
+
+.amarillo {
+    background-color: #FFFF00; 
+}
+
+.verde {
+    background-color: #00B050; 
+}
+
+.blanco {
+    background-color: #FFFFFF; 
+}
+
+
+.copyright {
+    border: 1px solid #000;
+    background-color: #4C9BD3;
+    margin: 0;
+    width: 900px;
+    height: 50px;
+}
+
+.copyright p {
+    text-align: center;
+    margin: 0;
+}
+
