@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola en PHP</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="cola.php" method="post">
+        <input type="text" name="dato" id="dato" placeholder="Ingresa un dato">
+        <input type="submit" name="accion" value="Guardar">
+    </form>
+    <form action="cola.php" method="post">
+        <input type="hidden" name="accion" value="Eliminar">
+        <input type="submit" value="Eliminar">
+    </form>
+    <form action="cola.php" method="post">
+        <input type="hidden" name="accion" value="Mostrar">
+        <input type="submit" value="Mostrar">
+    </form>
+</body>
+</html>
