@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Temperatura</title>
+</head>
+<body>
+    <form action="calcular.php" method="post">
+        <label for="TipoTemperatura" >Seleccione el tipo de temperatura:</label>
+        <select name="TipoTemperatura" id="TipoTemperatura" required>
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        <br>
+        <label for="temperatura">Ingrese la temperatura:</label>
+        <input type="number" name="temperatura" id="temperatura" required>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
