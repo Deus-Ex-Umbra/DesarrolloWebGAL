@@ -9,12 +9,13 @@
     <h1>Llenado de Palabras</h1>
     <form action="ordenar.php" method="post">
         <?php
+            session_start();
             $cantidad = $_POST['cantidad'];
-            for ($i=0; $i < $cantidad; $i++) { 
-                echo "<label for='palabra$i'>Palabra N°".($i+1).": </label>";
+            $_SESSION['cantidad'] = $cantidad;
+            for ($i=1; $i <= $cantidad; $i++) { 
+                echo "<label for='palabra$i'>Palabra N°".$i.": </label>";
                 echo "<input type='text' name='palabra$i' id='palabra$i' required><br>";
             }
-            echo "<input type='number' name='num' value='$cantidad'>";
         ?>
         <input type="submit" value="Ordenar">
     </form>

@@ -14,10 +14,10 @@
         }
         return $arrayPalabras;
     }
-    $cantidad = $_POST['num'];
-    echo "Cantidad: $cantidad";
+    session_start();
+    $cantidad = $_SESSION['cantidad'];
     $palabras = array();
-    for ($i=0; $i < $cantidad; $i++) { 
+    for ($i=1; $i <= $cantidad; $i++) { 
         $palabras[] = $_POST["palabra$i"];
     }
     $palabrasOrdenadas = ordenarPalabras($palabras);
