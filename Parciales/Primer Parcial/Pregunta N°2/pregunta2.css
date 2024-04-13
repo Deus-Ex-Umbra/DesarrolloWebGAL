@@ -1,0 +1,10 @@
+.pintar {
+    border: 1px solid #f6be07;
+    padding: 20px;
+    height: auto;
+    width: 400px;
+}
+
+.pintar > input, select, option {
+    border: 1px solid #f6be07;
+}

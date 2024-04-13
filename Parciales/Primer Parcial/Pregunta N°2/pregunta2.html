@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="formulario" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Operaciones</title>
+    <link rel="stylesheet" href="pregunta2.css">
+</head>
+<body>
+    <div class="pintar">
+    <form action="tabla.php" method="post">
+        <label for="operacion">Operación</label>
+        <select name="operacion">
+            <option value="1">Suma</option>
+            <option value="2">Resta</option>
+            <option value="3">Multiplicación</option>
+            <option value="4">División</option>
+        </select>
+        <label for="numero">n</label>
+        <input type="number" name="numero">
+        <br>
+        <input type="submit" value="Generar">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+.contenedor {
+    width: 900px;
+  }
+  .subcontenedor {
+    border: 1px solid #404040;
+  }
+  #encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #95B3D7;
+  }
+  #encabezado p {
+    margin: 0;
+  }
+
+  #siglos img{
+    margin-top: 8px;
+    margin-left: 8px;
+    height: 50px;
+    width: auto;
+  }
+  #universidad {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  #logousfx img{
+    height: 75px;
+    width: auto;
+    margin-right: 16px;
+  }
+  #usfx {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C60000;
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  #facultad {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404040;
+    font-size: 16px;
+  }
+  #ingenierias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #ingenierias div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  #sistemas {
+    border-right: 1px solid #404040;
+    background-color: #FFC000;
+    width: 100%;
+  }
+  #cienciascomp {
+    background-color: #0070C0;
+    width: 100%;
+  }
+  #preguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 30%;
+    padding-bottom: 4px;
+  }
+  #preguntas > div {
+    border: 1px solid #000000;
+    width: 100px;
+    padding: 8px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  .preguntar {
+    background-color: #C60000;
+  }
+  .preguntab {
+    background-color: #ffffff;
+  }
+  #datosestudiante {
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+  }
+  #datos {
+    background-color: #404040;
+    color: #FFC000;
+    padding: 16px 16px 32px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #datosparcial {
+    display: flex;
+    flex-direction: row;
+    background-color: #C0504D;
+    justify-content: space-evenly;
+    padding-left: 30%;
+    padding-right: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
