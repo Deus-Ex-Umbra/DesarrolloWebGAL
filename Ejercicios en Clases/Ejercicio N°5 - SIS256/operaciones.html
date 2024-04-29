@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Operaciones</title>
+</head>
+<body>
+    <form action="">
+        <label for="a">Escribe A:</label>
+        <input type="number" name="a" id="a" oninput="calcular()">
+        <br>
+        <label for="b">Escribe B:</label>
+        <input type="number" name="b" id="b" oninput="calcular()">
+        <select name="operaciones" id="operaciones" onchange="calcular()">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select>
+        <br>
+        <div id="resultado">
+            &nbsp;
+        </div>
+        <script>
+            function calcular() {
+                var a = document.getElementById("a");
+                var b = document.getElementById("b");
+                var operaciones = document.getElementById("operaciones");
+                var resultado = document.getElementById("resultado");
+                if (a.value && b.value) {
+                    switch (operaciones.value) {
+                        case "suma":
+                            resultado.innerHTML = parseInt(a.value) + parseInt(b.value);
+                            break;
+                        case "resta":
+                            resultado.innerHTML = parseInt(a.value) - parseInt(b.value);
+                            break;
+                        case "multiplicacion":
+                            resultado.innerHTML = parseInt(a.value) * parseInt(b.value);
+                            break;
+                        case "division":
+                            resultado.innerHTML = parseInt(a.value) / parseInt(b.value);
+                            break;
+                    }
+                    resultado.style.border = "red 1px solid";
+                    resultado.style.padding = "50px";
+                } else {
+                    resultado.innerHTML = ""; 
+                    resultado.style.border = "none";
+                    resultado.style.padding = "0";
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
