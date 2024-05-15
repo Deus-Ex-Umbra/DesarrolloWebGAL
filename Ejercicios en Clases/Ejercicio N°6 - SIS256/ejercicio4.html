@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <style>
+        .contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img{
+            width: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="imagen1" alt="N°1" id="1" onmouseover="mostrar(1)" onmouseleave="nomostrar(1)">
+        <img src="imagen2" alt="N°2" id="2" onmouseover="mostrar(2)" onmouseleave="nomostrar(2)">
+        <img src="imagen3" alt="N°3" id="3" onmouseover="mostrar(3)" onmouseleave="nomostrar(3)">
+        <img src="imagen4" alt="N°4" id="4" onmouseover="mostrar(4)" onmouseleave="nomostrar(4)">
+        <img src="imagen5" alt="N°5" id="5" onmouseover="mostrar(5)" onmouseleave="nomostrar(5)">
+        <img src="imagen6" alt="N°6" id="6" onmouseover="mostrar(6)" onmouseleave="nomostrar(6)">
+        <img src="imagen7" alt="N°7" id="7" onmouseover="mostrar(7)" onmouseleave="nomostrar(7)">
+        <img src="imagen8" alt="N°8" id="8" onmouseover="mostrar(8)" onmouseleave="nomostrar(8)">
+        <img src="imagen9" alt="N°9" id="9" onmouseover="mostrar(9)" onmouseleave="nomostrar(9)">
+        <img src="imagen10" alt="N°10" id="10" onmouseover="mostrar(10)" onmouseleave="nomostrar(10)">
+    </div>
+    <script>
+        function mostrar(id){
+            document.getElementById(id).style.width = "20px";
+        }
+        function nomostrar(id){
+            document.getElementById(id).style.width = "10px";
+        }
+    </script>
+</body>
+</html>

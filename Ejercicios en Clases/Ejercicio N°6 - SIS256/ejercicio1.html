@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Párrafo</title>
+</head>
+<body>
+    <div id="contenido">
+    </div>
+    <label for="parrafo">Escribe, por favor:</label>
+    <input type="text" id="parrafo" >
+    <script>
+        document.getElementById("parrafo").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                var elemento = document.createElement("p");
+                elemento.innerHTML = this.value;
+                document.getElementById("contenido").appendChild(elemento);
+            }
+        });
+
+    </script>
+</body>
+</html>

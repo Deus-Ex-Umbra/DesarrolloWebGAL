@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+    <label for="compra">Elemento de Lista</label>
+    <input type="text" id="compra"> 
+    <button onclick="agregar()">Añadir</button>
+    <ul id="lista">
+    </ul>
+    <script>
+        function agregar() {
+            var compra = document.getElementById("compra").value;
+            var lista = document.getElementById("lista");
+            if (buscarCadena(" de ")) {
+                lista.innerHTML += "<li style='background-color: yellow'>" + compra + "</li>";
+            } else {
+                lista.innerHTML += "<li>" + compra + "</li>";
+            }
+        }
+        function buscarCadena(cadena) {
+            var compra = document.getElementById("compra").value;
+            for(var i = 0; i <= compra.length - cadena.length; i++) {
+                var encontrado = true;
+                for(var j = 0; j < cadena.length; j++) {
+                    if (compra[i + j] !== cadena[j]) {
+                        encontrado = false;
+                        break;
+                    }
+                }
+                if (encontrado) return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

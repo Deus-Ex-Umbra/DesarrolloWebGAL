@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estudiantes</title>
+</head>
+<body>
+    <table id="estudiantes" border="1px"> 
+
+    </table>
+    <button onclick="mostrarEstudiantes()">Mostrar</button>
+    <button onclick="añadirEstudiantes()">Añadir</button>
+    <div id="formulario">
+    </div>
+    <script>
+        function Estudiante(_apellidos_nombres, _edad, _calificacion) {
+            this.apellidos_nombres = _apellidos_nombres;
+            this.edad = _edad;
+            this.calificacion = _calificacion;
+        }
+
+        function Calificacion(_materia, _nota) {
+            this.materia = _materia;
+            this.nota = _nota;
+        }
+
+        var estudiantes = [
+            new Estudiante("Juan Perez", 25, new Calificacion("SIS256", 83)),
+            new Estudiante("Ricardo Luna", 30, new Calificacion("SIS256", 70)),
+            new Estudiante("Teresa Tomasa", 26, new Calificacion("SIS256", 84)),
+            new Estudiante("Favian Umbre", 24, new Calificacion("SIS256", 70))
+        ];
+
+        function añadirEstudiantes() {
+            var formulario = document.getElementById("formulario");
+            formulario.innerHTML = "<input type='text' id='apellidos_nombres'><br>";
+            formulario.innerHTML += "<input type='number' id='edad'><br>";
+            formulario.innerHTML += "<input type='text' id='materia'><br>";
+            formulario.innerHTML += "<input type='number' id='nota'><br>";
+            formulario.innerHTML += "<button onclick='guardarEstudiante()'>Guardar</button>";
+        }
+
+        function guardarEstudiante() {
+            var apellidos_nombres = document.getElementById("apellidos_nombres").value;
+            var edad = parseInt(document.getElementById("edad").value);
+            var materia = document.getElementById("materia").value;
+            var nota = parseFloat(document.getElementById("nota").value);
+            var calificacion = new Calificacion(materia, nota);
+            var nuevoEstudiante = new Estudiante(apellidos_nombres, edad, calificacion);
+            estudiantes.push(nuevoEstudiante);
+            var formulario = document.getElementById("formulario");
+            formulario.innerHTML = "";
+        }
+
+        function mostrarEstudiantes() {
+            var tabla = document.getElementById("estudiantes");
+            tabla.innerHTML = "<tr><th>Apellidos y Nombres</th><th>Edad</th><th>Materia</th><th>Nota</th></tr>";
+            for (var i = 0; i < estudiantes.length; i++) {
+                tabla.innerHTML += "<tr id=" + i + "><td>" + estudiantes[i].apellidos_nombres + "</td><td>" + estudiantes[i].edad + "</td><td>" + estudiantes[i].calificacion.materia + "</td><td>" + estudiantes[i].calificacion.nota + "</td></tr>";
+            }
+            encontrarMejorEstudiante();
+        }
+
+        function encontrarMejorEstudiante() {
+            mejor = 0;
+            indice = 0;
+            for (var i = 0; i < estudiantes.length; i++) {
+                if (estudiantes[i].calificacion.nota > mejor) {
+                    mejor = estudiantes[i].calificacion.nota;
+                    indice = i;
+                }
+            }
+            var mejorestudiante = document.getElementById(indice);
+            mejorestudiante.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

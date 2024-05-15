@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div id="tareas">
+        &nbsp;
+    </div>
+    <script>
+        var tareas = {}; 
+        var cantidad = Math.random() + 99;
+        function crearLista() {
+            t = document.getElementById("tareas");
+            var html = "<ul> Tareas";
+            for (let i = 1; i <= cantidad; i++) {
+                tareas[i] = `Tarea N°${i}`;
+                html += `<li id="tarea${i}">${tareas[i]} `;
+                html += `<button onclick="eliminarTarea(${i})">Eliminar</button>`;
+                html += "</li>";
+            }
+            html += "</ul>";
+            t.innerHTML = html;
+            //document.write(html);
+        }
+        function eliminarTarea(id) {
+            delete tareas[id];
+            cantidad --;
+            var html = "<ul> Tareas";
+            for (var i = 1; i <= cantidad; i++) {
+                if (tareas[i]) {
+                    html += `<li id="tarea${i}">${tareas[i]} `;
+                    html += `<button onclick="eliminarTarea(${i})">Eliminar</button>`;
+                    html += "</li>";
+                }
+            }
+            html += "</ul>";
+            t.innerHTML = html;
+            //document.write(html);
+        }
+        crearLista();
+    </script>
+</body>
+</html>

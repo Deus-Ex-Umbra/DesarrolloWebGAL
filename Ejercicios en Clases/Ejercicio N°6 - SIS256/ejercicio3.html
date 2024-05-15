@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafo</title>
+</head>
+<body>
+    <p id="parrafo">
+        &nbsp;
+    </p>
+    <br>
+    <button onclick="cambiar()">Cambiar</button>
+    <script>
+        function cambiar() {
+            var parrafo = document.getElementById("parrafo");
+            var textos = ["Hola", "Adios", "Buenos dias", "Buenas noches", "Hasta luego"];
+            parrafo.innerHTML =textos[Math.floor(Math.random() * textos.length)];
+        }
+    </script>
+</body>
+</html>

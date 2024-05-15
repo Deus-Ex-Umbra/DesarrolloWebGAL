@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagen</title>
+    <style>
+        #imag{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img id="imag" src="deus_ex_umbra.jpg" alt="Deus Ex Umbra">
+    <br>
+    <input type='number' id='tam'>
+    <br>
+    <button onclick="agrandar()">Agrandar</button>
+    <button onclick="reducir()">Reducir</button>
+    <script>
+        function agrandar(){
+            var img = document.getElementById("imag");
+            var tam = parseInt(document.getElementById("tam").value);
+            var awidth = parseInt(img.width);
+            img.style.width = (awidth + tam) + 'px';
+        }
+        function reducir(){
+            var img = document.getElementById("imag");
+            var tam = parseInt(document.getElementById("tam").value);
+            var awidth = parseInt(img.width);
+            img.style.width = (awidth - tam) + 'px';
+        }
+    </script>
+</body>
+</html>
