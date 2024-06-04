@@ -1,12 +1,12 @@
 <?php
-echo "<form id='login'>";
-echo "<label for='usuario'>Usuario:</label>";
-echo "<input type='text' id='usuario'> <br>";
-echo "<label for='contrasena'>Contraseña:</label>";
-echo "<input type='password' id='contrasena'> <br>";
-echo "<img src='javascript:cargarEn('imagencaptcha', '../../Ejercicio N°3/php/login.php')' id='imagencaptcha'>";
-echo "<label for='captcha'>Captcha:</label>";
-echo "<input type='text' id='captcha'> <br>";
-echo "<button onclick='validarLogin()'>Ingresar</button>";
-echo "</form>";
+$captcha = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, 4);
+session_start();
+$_SESSION['captcha'] = $captcha;
 ?>
+
+<form action="autenticar.php" method="post">
+    Usuario: <input type="text" name="usuario"><br>
+    Password: <input type="password" name="password"><br>
+    Captcha: <input type="text" name="captcha"> <?php echo $captcha; ?><br>
+    <button type="submit">Loguearse</button>
+</form>
