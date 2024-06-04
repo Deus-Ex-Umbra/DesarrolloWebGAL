@@ -1,0 +1,85 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.central {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+
+#principal {
+    display: flex;
+    width: 80%;
+    background-color: #f1f1f1;
+    border: 1px solid #0bf313;
+    padding: 20px;
+}
+
+#menu {
+    width: 20%;
+    background-color: #d9ff00;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.barrafinal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color: #f3a60b;
+}
+
+#mensaje {
+    width: 90%;
+    background-color: #f3a60b;
+    border: 1px solid #0bf313;
+}
+
+#recargar {
+    width: 10%;
+    background-color: #f3a60b;
+    border: 1px solid #0bf313;
+}
+
+#botonrecargar {
+    width: 100%;
+    height: 100%;
+    background-color: #ff0202;
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.paginas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin: 10%;
+    padding: 10%;
+    background-color: #f1f1f1;
+    color: #0000;
+    border: 1px solid #000000;
+}
+
+
+.libro img{
+    width: 50px;
+    height: 75px;
+    margin: 10px;
+}
